@@ -7,7 +7,7 @@
 ¡Bienvenido al repositorio de **[Tienda en Electronica/MasterTech]**! Esta es una aplicación web moderna diseñada con una interfaz adaptable, optimizada con un modo oscuro nativo para reducir la fatiga visual y mejorar la experiencia del usuario.
 
 ## 🚨 **Problema principal**
- Está página ha sido creada debido a que la tienda de electronicas "**Mastertech**", aún si no le iba mal, no tenía la visibilidad necesaria para crecer y expandirse a otras zonas ubicadas; Además, otro de los problemas es que muchas personas no se enteraban de ofertas, productos nuevos, ni que artículos están Disponibles, o ya no supiesen que artículos ya no encontraban disponibles. Por eso hemos decidido crear este sitio web, para ayudar tanto a este pequeño emprendimiento como ayudar a los usuarios a conocer de esta increíble tienda.
+ Está página ha sido creada debido a que la tienda de electronicas "**Mastertech**", aún si no le iba mal, no tenía la visibilidad necesaria para crecer y expandirse a otras zonas ubicadas; Además, otro de los problemas es que muchas personas no se enteraban de ofertas, productos nuevos, ni que precio tenian algunos artículos o de sus reparaciones, o ya no supiesen que artículos ya no encontraban disponibles. Por eso hemos decidido crear este sitio web, para ayudar tanto a este pequeño emprendimiento como ayudar a los usuarios a conocer de esta increíble tienda.
 
 ## 🎨 Características Principales
 

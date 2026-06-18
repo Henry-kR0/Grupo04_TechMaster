@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterTech | Electrónica y Reparaciones</title>
+    <link rel="stylesheet" href="stilos2.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='10' width='80' height='80' rx='12' fill='%230b0f19'/><path d='M30 70V30L50 52L70 30V70' fill='none' stroke='%2300f5d4' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='30' cy='30' r='5' fill='%2300f5d4'/><circle cx='70' cy='30' r='5' fill='%2300f5d4'/></svg>">
+</head>
+<body>
 
+    <header class="header">
+        <nav class="navbar container">
+            <a class="navbar-brand" href="#inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="160" height="40" style="display: block;">
+                    <defs>
+                        <!--Esta parte de aqui es para poder perzonalizar el logo de la pagina web,el que esta 
+                        en la esquina superior izquierda de la pagina web-->
+                        <style>
+                            .accent-glow { stroke: var(--accent); filter: drop-shadow(0px 0px 3px var(--accent)); }
+                            .text-brand { font-family: monospace; font-weight: 900; font-size: 36px; fill: #ffffff; letter-spacing: 2px; }
+                            .text-slogan { font-family: -apple-system, sans-serif; font-weight: 700; font-size: 10px; fill: #94a3b8; letter-spacing: 4px; text-transform: uppercase; }
+                            .circuit-dot { fill: var(--accent); }
+                            .chip-pins { fill: #cbd5e1; }
+                        </style>
+                        <!--Todo este bloque dibuja un gráfico vectorial (SVG) desde cero directamente en el navegador.-->
+                    </defs>
+                    <g transform="translate(10, 22)">
+                        <rect x="10" y="10" width="56" height="56" rx="6" fill="#131a2c" stroke="#334155" stroke-width="3" />
+                        <rect x="2" y="20" width="8" height="6" rx="1" class="chip-pins" />
+                        <rect x="2" y="35" width="8" height="6" rx="1" class="chip-pins" />
+                        <rect x="2" y="50" width="8" height="6" rx="1" class="chip-pins" />
+                        <rect x="66" y="20" width="8" height="6" rx="1" class="chip-pins" />
+                        <rect x="66" y="35" width="8" height="6" rx="1" class="chip-pins" />
+                        <rect x="66" y="50" width="8" height="6" rx="1" class="chip-pins" />
+                        <path d="M22 54V24L38 42L54 24V54" fill="none" class="accent-glow" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="22" cy="24" r="3" class="circuit-dot" />
+                        <circle cx="54" cy="24" r="3" class="circuit-dot" />
+                        <circle cx="38" cy="42" r="3.5" class="circuit-dot" />
+                        <!--En lugar de cargar una imagen pesada de internet, el navegador lee estas coordenadas
+                         matemáticas (rect para rectángulos, path para líneas y circle para puntos) y genera al instante el icono de un procesador/microchip personalizado que tiene grabada una M brillante en el centro.-->
+                    </g>
+                    <text x="95" y="58" class="text-brand">MASTERTECH<tspan fill="var(--accent)">_</tspan></text>
+                    <text x="98" y="80" class="text-slogan">HARDWARE &amp; SUPPORT</text>
+                    <line x1="98" y1="66" x2="410" y2="66" stroke="#334155" stroke-width="2" />
+                </svg>
+            </a>
+            
+            <div class="nav-right">
+                <button id="btnTema" class="btn-theme" aria-label="Cambiar tema">🌙 Modo Oscuro</button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li><a class="nav-link" href="#informacion">Información General</a></li>
+                    <li><a class="nav-link" href="#servicios">Servicios y Productos</a></li>
+                    <li><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container text-center">
+                <h1 class="hero-title">Tu Solución en Electrónica</h1>
+                <p class="hero-subtitle">Venta de componentes de alta calidad y soporte técnico especializado de confianza.</p>
+                <a href="#servicios" class="btn btn-info">Explorar Catálogo</a>
+            </div>
+        </section>
+
+        <section id="informacion" class="section bg-light">
+            <div class="container grid-2">
+                <div class="info-detalles">
+                    <span class="text-badge">¿A qué se dedica MasterTech?</span>
+                    <h2 class="section-title">Llevando tecnología y repuestos a tu alcance</h2>
+                    <p class="text-muted">Somos un emprendimiento dedicado a vender productos electrónicos, componentes de hardware y a ofrecer reparaciones garantizadas de dispositivos. Resolvemos la falta de publicidad y visibilidad local para conectar de manera eficiente con las necesidades de nuestra comunidad.</p>
+                    
+                    <div class="datos-locales">
+                        <div class="dato-item">
+                            <span class="dato-icon">🕒</span>
+                            <div>
+                                <strong>Horarios de Atención:</strong>
+                                <p class="text-muted">Lunes a Sábado: 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="dato-item">
+                            <span class="dato-icon">📍</span>
+                            <div>
+                                <strong>Ubicación de nuestro Local:</strong>
+                                <p class="text-muted">Local Central, El Salvador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card-box">
+                    <div class="info-card">
+                        <span class="card-icon">🛡️</span>
+                        <h3>Garantía Asegurada</h3>
+                        <p>Cada componente y soporte técnico cuenta con los estándares más altos de calidad comercial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Nuestros Servicios y Catálogo</h2>
+                <p class="text-muted">Explora nuestras categorías principales utilizando el filtro dinámico interactivo.</p>
+                
+                <div class="botones-filtro" id="botones-filtro">
+                    <button class="btn-filter active" data-filter="todos">Todos</button>
+                    <button class="btn-filter" data-filter="reparacion">Soporte y Reparación</button>
+                    <button class="btn-filter" data-filter="componentes">Componentes</button>
+                </div>
+
+                <div class="grid-3 mt-4" id="contenedor-items">
+                    <div class="card item-tarjeta" data-category="reparacion">
+                        <div class="card-body">
+                            <div class="icon-circle">💻</div>
+                            <h3>Reparación de Laptops</h3>
+                            <p class="text-muted">Mantenimiento preventivo, cambio de pantallas, teclados y reparación avanzada de placas base.</p>
+                        </div>
+                    </div>
+                    <div class="card item-tarjeta" data-category="componentes">
+                        <div class="card-body">
+                            <div class="icon-circle">💾</div>
+                            <h3>Memorias RAM y SSD</h3>
+                            <p class="text-muted">Unidades de almacenamiento SSD NVMe y módulos RAM de alta velocidad para potenciar tus equipos.</p>
+                        </div>
+                    </div>
+                    <div class="card item-tarjeta" data-category="reparacion">
+                        <div class="card-body">
+                            <div class="icon-circle">📱</div>
+                            <h3>Soporte de Smartphones</h3>
+                            <p class="text-muted">Diagnósticos de fallas, cambios de puertos de carga USB Tipo-C y reinstalación de software.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Galería de Trabajo</h2>
+                <p class="text-muted">Visualiza las instalaciones del taller de soporte y componentes en stock.</p>
+                
+                <div class="grid-3 mt-4">
+                    <div class="gallery-placeholder panel-oscuro">
+                        <span>🛠️ Laboratorio Técnico</span>
+                    </div>
+                    <div class="gallery-placeholder panel-gris">
+                        <span>📟 Componentes Avanzados</span>
+                    </div>
+                    <div class="gallery-placeholder panel-oscuro">
+                        <span>⚡ Calidad de Repuestos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container grid-2">
+                <div class="contacto-texto">
+                    <h2 class="section-title">Escríbenos o Visítanos</h2>
+                    <p class="text-muted">¿Tienes dudas sobre una reparación de componentes? Rellena el formulario web de forma inmediata.</p>
+                    <div class="info-box-alert">
+                        <strong>ℹ️ Información del Canal</strong>
+                        <p>Las consultas enviadas a través de este portal se procesan de forma automatizada por el script de validación.</p>
+                    </div>
+                </div>
+                
+                <div class="contacto-formulario-container">
+                    <div class="form-card">
+                        <div id="alerta-formulario"></div>
+
+                        <form id="formContacto">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label">Mensaje o Consulta</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Enviar Consulta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="footer-brand">MasterTech &copy; 2026</p>
+            <p class="footer-text">Soluciones de Hardware y Soporte Técnico Profesional.</p>
+        </div>
+    </footer >
+
+    <script src="js/app.js"></script>
+</body>
+</html>

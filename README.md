@@ -3,6 +3,7 @@
 - Anderson Martínes.
 - Emmanuel Henríquez.
 - Emely Durán.
+
 ¡Bienvenido al repositorio de **[Tienda en Electronica/MasterTech]**! Esta es una aplicación web moderna diseñada con una interfaz adaptable, optimizada con un modo oscuro nativo para reducir la fatiga visual y mejorar la experiencia del usuario.
 **Problema principal**
   Esta pagina ha sido creada viendo la necesidad de muchas personas

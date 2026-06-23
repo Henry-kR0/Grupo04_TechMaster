@@ -263,11 +263,25 @@ body {
 
 /* --- SECCIÓN GALERÍA --- */
 .gallery-placeholder {
-    min-height: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 15px;
     border-radius: 8px;
+    text-align: center;
+    gap: 12px;
+}
+
+.gallery-placeholder img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-placeholder span {
     font-weight: bold;
 }
 .panel-claro { background-color: #2d3748; color: #f1f5f9; }
